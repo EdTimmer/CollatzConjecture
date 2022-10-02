@@ -1,8 +1,7 @@
 import styled from 'styled-components';
+import colors from '../styles/colors';
 
 export const FormContainer = styled.div`
-  /* background: #c4c1e0; */
-  /* background: #ffe9e3; */
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 12px;
@@ -18,16 +17,17 @@ export const TextLabel = styled.p`
 `;
 
 export const StyledButton = styled.button`
-  /* background: #c4c1e0; */
-  background: #7c73e6;
+  background: ${colors.teal};
   height: 32px;
   margin-left: 10px;
   border-width: 0;
   border-radius: 4px;
-  color: white;
+  color: ${colors.white};
   font-size: 18px;
 `;
 
 export const StyledInput = styled.input`
   height: 32px;
+  font-size: 18px;
+  font-weight: bold;
 `;

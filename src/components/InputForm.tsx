@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useStore } from './store';
-import { runCollatz } from './CollatzAlgorithm';
+import { useStore } from '../store';
+import { runCollatz } from '../utils/collatzAlgorithm';
 import {
   FormContainer,
   TextLabel,

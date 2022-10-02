@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import colors from '../styles/colors';
 
 export const DataContainer = styled.div`
   max-width: 100%;
@@ -23,16 +24,36 @@ export const DataValues = styled.p`
 `;
 
 export const SingleValue = styled.div`
-  background: #ffe9e3;
+  background: ${colors.lightGray01};
+  color: ${colors.teal};
   border: 1px solid black;
   border-radius: 4px;
   margin: 2px;
   padding: 4px;
+  
+  &:first-child {
+    color: ${colors.grey01};
+  }
+  
+  &:nth-last-child(-n+3) {
+    color: ${colors.orange};
+  }
 `;
 
-export const IterationsRow = styled.div`
+export const OperationsRow = styled.div`
   margin-top: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
+`;
+
+export const OperationsValue = styled.div`
+  background: ${colors.teal};
+  color: ${colors.lightGray01};
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 2px;
+  padding: 0 4px;
+  font-size: 20px;
+  font-weight: bold;
 `;

@@ -1,11 +1,11 @@
 import styled from 'styled-components';
+import colors from '../styles/colors';
 
 export const AppContainer = styled.div`
-  background: #fafafa;
+  background: ${colors.lightBeige01};
   font-family: 'Roboto', sans-serif;
   width: 100vw;
-  height: 100vh;
-  /* padding: 30px; */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;

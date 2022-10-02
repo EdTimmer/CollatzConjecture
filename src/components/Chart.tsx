@@ -6,8 +6,9 @@ import {
   CartesianGrid,
   Line,
   LabelList,
+  Label,
 } from 'recharts';
-import { useStore } from './store';
+import { useStore } from '../store';
 import { ChartContainer } from './Chart.css';
 
 const Chart = () => {
@@ -44,15 +45,27 @@ const Chart = () => {
         height={550}
         data={data}
         margin={{
-          top: 5,
-          right: 30,
+          top: 20,
+          right: 20,
           left: 20,
-          bottom: 5,
+          bottom: 30,
         }}
       >
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="iteration" />
-        <YAxis />
+        <XAxis dataKey="iteration">
+          <Label
+            angle={0}
+            position="insideBottom"
+            offset={-10}
+          >
+            Operations
+          </Label>
+        </XAxis>
+        <YAxis>
+          <Label angle={270} position="left" style={{ textAnchor: 'middle' }}>
+            Integers
+          </Label>
+        </YAxis>
         <Tooltip />
         <Line
           type="monotone"
