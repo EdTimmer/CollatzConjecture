@@ -17,10 +17,7 @@ const RawData = () => {
     <DataContainer>
       <TextLabel>Integers: </TextLabel>
       <DataValues>
-        {collection.map((val) => {
-          setTimeout(() => {
-            console.log('World!');
-          }, 50);
+        {collection.map((val, index) => {
           return <SingleValue>{val}</SingleValue>;
         })}
       </DataValues>

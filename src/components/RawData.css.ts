@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import colors from '../styles/colors';
 
+// const opacityAnimation = keyframes`
+//   from {opacity: 0;}
+//   to {opacity: 1;}
+// `;
+
 export const DataContainer = styled.div`
   max-width: 100%;
   padding: 12px;
