@@ -14,8 +14,8 @@ import { ChartContainer } from './Chart.css';
 const Chart = () => {
   const collection = useStore((state) => state.collection);
 
-  const createData = (iteration: number, num: number) => {
-    return { iteration, num };
+  const createData = (iteration: number, integer: number) => {
+    return { iteration, integer };
   };
 
   const formatData = (collection: number[]) => {
@@ -53,11 +53,7 @@ const Chart = () => {
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="iteration">
-          <Label
-            angle={0}
-            position="insideBottom"
-            offset={-10}
-          >
+          <Label angle={0} position="insideBottom" offset={-10}>
             Operations
           </Label>
         </XAxis>
@@ -69,8 +65,9 @@ const Chart = () => {
         <Tooltip />
         <Line
           type="monotone"
-          dataKey="num"
-          stroke="#8884d8"
+          dataKey="integer"
+          // stroke="#8884d8"
+          stroke="#e8630a"
           activeDot={{ r: 8 }}
         >
           <LabelList content={<CustomizedLabel />} />

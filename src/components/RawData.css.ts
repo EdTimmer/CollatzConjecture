@@ -59,6 +59,6 @@ export const OperationsValue = styled.div`
   border-radius: 4px;
   margin: 2px;
   padding: 0 4px;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 `;

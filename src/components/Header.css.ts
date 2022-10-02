@@ -9,7 +9,7 @@ export const HeaderContainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  background: ${colors.grey02};
+  background: ${colors.teal};
   width: 100%;
   padding: 10px;
   display: flex;
@@ -19,7 +19,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.p`
-  color: ${colors.lightGray01};
+  color: ${colors.lightBeige01};
   padding: 0;
   margin: 0;
   font-size: 20px;

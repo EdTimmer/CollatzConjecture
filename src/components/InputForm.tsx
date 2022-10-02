@@ -36,7 +36,7 @@ const InputForm = () => {
   console.log('num :>> ', num);
   return (
     <FormContainer>
-      <TextLabel>Start Number:</TextLabel>
+      <TextLabel>Start Integer:</TextLabel>
       <form>
         <StyledInput
           type="text"

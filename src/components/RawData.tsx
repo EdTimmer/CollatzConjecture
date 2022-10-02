@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { useStore } from '../store';
 import {
   DataContainer,
@@ -10,14 +11,13 @@ import {
 
 const RawData = () => {
   const collection = useStore((state) => state.collection);
-
   const numOfOperations = collection.length ? collection.length - 1 : 0;
 
   return (
     <DataContainer>
       <TextLabel>Integers: </TextLabel>
       <DataValues>
-        {collection.map((val, index) => {
+        {collection.map(val => {
           return <SingleValue>{val}</SingleValue>;
         })}
       </DataValues>

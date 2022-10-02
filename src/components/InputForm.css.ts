@@ -18,6 +18,7 @@ export const TextLabel = styled.p`
 
 export const StyledButton = styled.button`
   background: ${colors.teal};
+  color: ${colors.lightBeige01};  
   height: 32px;
   margin-left: 10px;
   border-width: 0;
