@@ -8,6 +8,7 @@ import {
   LabelList,
 } from 'recharts';
 import { useStore } from './store';
+import { ChartContainer } from './Chart.css';
 
 const Chart = () => {
   const collection = useStore((state) => state.collection);
@@ -26,7 +27,7 @@ const Chart = () => {
 
   const data = collection.length ? formatData(collection) : [createData(0, 0)];
 
-  const CustomizedLabel = (props: any ) => {
+  const CustomizedLabel = (props: any) => {
     const { x, y, value } = props;
 
     return (
@@ -37,30 +38,32 @@ const Chart = () => {
   };
 
   return (
-    <LineChart
-      width={500}
-      height={300}
-      data={data}
-      margin={{
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5,
-      }}
-    >
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="iteration" />
-      <YAxis />
-      <Tooltip />
-      <Line
-        type="monotone"
-        dataKey="num"
-        stroke="#8884d8"
-        activeDot={{ r: 8 }}
+    <ChartContainer>
+      <LineChart
+        width={1200}
+        height={550}
+        data={data}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
       >
-        <LabelList content={<CustomizedLabel />} />
-      </Line>
-    </LineChart>
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="iteration" />
+        <YAxis />
+        <Tooltip />
+        <Line
+          type="monotone"
+          dataKey="num"
+          stroke="#8884d8"
+          activeDot={{ r: 8 }}
+        >
+          <LabelList content={<CustomizedLabel />} />
+        </Line>
+      </LineChart>
+    </ChartContainer>
   );
 };
 

@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 
 export const FormContainer = styled.div`
-  /* width: 500px; */
-  margin: 20px;
+  /* background: #c4c1e0; */
+  /* background: #ffe9e3; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 `;
 
 export const TextLabel = styled.p`
@@ -14,10 +18,16 @@ export const TextLabel = styled.p`
 `;
 
 export const StyledButton = styled.button`
-  height: 24px;
+  /* background: #c4c1e0; */
+  background: #7c73e6;
+  height: 32px;
   margin-left: 10px;
+  border-width: 0;
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
 `;
 
 export const StyledInput = styled.input`
-  height: 24px;
+  height: 32px;
 `;
