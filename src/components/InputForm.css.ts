@@ -30,4 +30,7 @@ export const StyledInput = styled.input`
   height: 32px;
   font-size: 18px;
   font-weight: bold;
+  background: ${colors.lightGray01};
+  border: 1px solid ${colors.teal};
+  border-radius: 4px;
 `;

@@ -29,7 +29,7 @@ export const SingleValue = styled.div`
   border: 1px solid black;
   border-radius: 4px;
   margin: 2px;
-  padding: 4px;
+  padding: 1px 4px;
   
   &:first-child {
     color: ${colors.grey01};

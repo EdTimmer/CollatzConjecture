@@ -37,18 +37,20 @@ const InputForm = () => {
   return (
     <FormContainer>
       <TextLabel>Start Number:</TextLabel>
-      <StyledInput
-        type="text"
-        value={num ? num : ''}
-        name="num"
-        onChange={handleNumChange}
-      />
-      <StyledButton type="submit" onClick={handleSubmit}>
-        Submit
-      </StyledButton>
-      <StyledButton type="submit" onClick={handleClear}>
-        Clear
-      </StyledButton>
+      <form>
+        <StyledInput
+          type="text"
+          value={num ? num : ''}
+          name="num"
+          onChange={handleNumChange}
+        />
+        <StyledButton type="submit" onClick={handleSubmit}>
+          Submit
+        </StyledButton>
+        <StyledButton type="button" onClick={handleClear}>
+          Clear
+        </StyledButton>
+      </form>
     </FormContainer>
   );
 };
