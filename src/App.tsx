@@ -1,19 +1,20 @@
-import './App.css';
 import { useStore } from './store';
 
+import { AppContainer } from './App.css';
 import InputForm from './InputForm';
+import Chart from './Chart';
+import RawData from './RawData';
 
 const App = () => {
 
   const collection = useStore((state) => state.collection);
 
-  // console.log('collection', collection)
   return (
-    <div className="App">
+    <AppContainer>
       <InputForm />
-      <h1>{collection.toString()}</h1>
-      <h1>{collection.length}</h1>
-    </div>
+      <RawData />
+      <Chart />
+    </AppContainer>
   );
 }
 

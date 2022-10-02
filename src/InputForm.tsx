@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useStore } from './store';
 import { runCollatz } from "./CollatzAlgorithm";
+import { FormContainer, TextLabel, StyledButton, StyledInput } from "./InputForm.css";
 
 const InputForm = () => {
   const [num, setNum] = useState<number>(0);
@@ -29,17 +30,17 @@ const InputForm = () => {
   };
   
   return (
-    <>
-      <h1>Start Number</h1>
-      <input type="text" value={num} name="num" onChange={handleNumChange} />
-      <br />
-      <button type="submit" onClick={handleSubmit}>
-        Submit
-      </button>
-      <button type="submit" onClick={handleClear}>
-        Clear
-      </button>
-    </>
+    <FormContainer>
+        <TextLabel>Start Number:</TextLabel>
+        <StyledInput type="text" value={num} name="num" onChange={handleNumChange} />
+        <StyledButton type="submit" onClick={handleSubmit}>
+          Submit
+        </StyledButton>
+        <StyledButton type="submit" onClick={handleClear}>
+          Clear
+        </StyledButton>
+
+    </FormContainer>
   );
 }
 
