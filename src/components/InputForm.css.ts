@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import colors from '../styles/colors';
 
 export const FormContainer = styled.div`
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid ${colors.teal};
+  border-bottom: 1px solid ${colors.teal};
   padding: 12px;
   display: flex;
   flex-direction: row;

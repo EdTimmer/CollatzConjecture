@@ -31,7 +31,7 @@ export const DataValues = styled.p`
 export const SingleValue = styled.div`
   background: ${colors.lightGray01};
   color: ${colors.teal};
-  border: 1px solid black;
+  border: 1px solid ${colors.teal};
   border-radius: 4px;
   margin: 2px;
   padding: 1px 4px;
@@ -55,7 +55,7 @@ export const OperationsRow = styled.div`
 export const OperationsValue = styled.div`
   background: ${colors.teal};
   color: ${colors.lightGray01};
-  border: 1px solid black;
+  border: 1px solid ${colors.teal};
   border-radius: 4px;
   margin: 2px;
   padding: 0 4px;
