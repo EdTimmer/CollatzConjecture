@@ -17,8 +17,8 @@ const RawData = () => {
     <DataContainer>
       <TextLabel>Integers: </TextLabel>
       <DataValues>
-        {collection.map(val => {
-          return <SingleValue>{val}</SingleValue>;
+        {collection.map((val, index) => {
+          return <SingleValue key={index}>{val}</SingleValue>;
         })}
       </DataValues>
       <OperationsRow>

@@ -18,7 +18,7 @@ export const TextLabel = styled.p`
   margin: 0 10px 0 0;
 `;
 
-export const DataValues = styled.p`
+export const DataValues = styled.div`
   margin: 0;
   padding: 0;
   font-size: 22px;
